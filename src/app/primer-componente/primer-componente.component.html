@@ -1,0 +1,16 @@
+<form>
+    <div class="row">
+        <label>Nombre:</label>
+        <input type="text" [(ngModel)]="persona.nombre" name= "nombre"id="txtNombre">
+    </div>
+      <div class="row">
+        <label>Apellido:</label>
+        <input  type="text" [(ngModel)]="persona.apellido" name="apellido">
+    </div>
+      <div class="row">
+        <label>Dni:</label>
+        <input [type]="tipoControl" [class]="claseDni" [(ngModel)]="persona.dni" name="dni">
+    </div>
+
+<input type="button" (click)="mostrar()" (click)="cambiarClase()" value="Presione aqui">
+</form>
