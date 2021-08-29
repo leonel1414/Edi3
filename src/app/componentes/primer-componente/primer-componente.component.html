@@ -14,3 +14,23 @@
 
 <input type="button" (click)="mostrar()" (click)="cambiarClase()" value="Presione aqui">
 </form>
+
+
+<form>
+<div class="row">
+ <select  (input)=mostrarSeleccionado() id="opPersonas">
+   <option *ngFor="let item of nombres" value={{item.dni}} >{{item.nombre}}-{{item.apellido}}</option>
+ </select>
+</div>
+</form>
+
+<form >
+    <div *ngFor="let item of nombres" class="row">
+      <label></label>
+      <input type="text" [value]="item.nombre">
+         <input type="text" [value]="item.apellido">
+            <input type="text" [value]="item.dni">
+
+    </div>
+ 
+</form>
