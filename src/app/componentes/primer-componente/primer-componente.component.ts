@@ -10,7 +10,8 @@ export class PrimerComponenteComponent implements OnInit {
   persona: Persona;
   claseDni: string = 'rojo';
   tipoControl: string = 'text';
-  nombres:Array<Persona>
+  nombres: Array<Persona>
+  modificar: number | undefined;
   
 
   setValue(valor:string) {
@@ -21,10 +22,11 @@ export class PrimerComponenteComponent implements OnInit {
   }
 
   constructor() {
-    this.persona = { nombre: "Leonel", apellido: "Girett", dni: 36946390 }
-    this.nombres = [{ nombre: "Leonel", apellido: "Girett", dni: 36946390 },
-      { nombre: "Florencia", apellido: "Juares", dni: 36934390 },
-    {nombre:"Carlos",apellido:"Cruz",dni:369463567},];
+    this.persona = { id: 5, nombre: "Leonel", apellido: "Girett", dni: 36946390 };
+    this.nombres = [{id:1, nombre: "Leonel", apellido: "Girett", dni: 36946390 },
+      { id:2, nombre: "Florencia", apellido: "Juares", dni: 36934390 },
+      { id:3, nombre: "Carlos", apellido: "Cruz", dni: 369463567 },];
+    this.modificar= -1;
     
    }
 
@@ -47,5 +49,10 @@ export class PrimerComponenteComponent implements OnInit {
     let persona = (<HTMLInputElement>document.getElementById('opPersonas')).value;
     alert(persona);
   }
-
+  modifica(idAmodificar:number | undefined) {
+    this.modificar = idAmodificar;
+  }
+noModifica() {
+    this.modificar =-1;
+  }
 }
