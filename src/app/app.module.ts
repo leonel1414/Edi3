@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PrimerComponenteComponent } from './componentes/primer-componente/primer-componente.component';
 import { LoginComponent } from './componentes/login/login.component';
+import { NoEncontradoComponent } from './componentes/no-encontrado/no-encontrado.component';
+import { MenuComponent } from './componentes/menu/menu.component';
 
 
 @NgModule({
@@ -13,6 +15,8 @@ import { LoginComponent } from './componentes/login/login.component';
     AppComponent,
     PrimerComponenteComponent,
     LoginComponent,
+    NoEncontradoComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
