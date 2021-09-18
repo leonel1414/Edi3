@@ -9,6 +9,8 @@ import { LoginComponent } from './componentes/login/login.component';
 import { NoEncontradoComponent } from './componentes/no-encontrado/no-encontrado.component';
 import { MenuComponent } from './componentes/menu/menu.component';
 import { SegundoComponenteComponent } from './componentes/segundo-componente/segundo-componente.component';
+import { GeneralComponent } from './componentes/general/general.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
 
@@ -19,14 +21,16 @@ import { SegundoComponenteComponent } from './componentes/segundo-componente/seg
     LoginComponent,
     NoEncontradoComponent,
     MenuComponent,
-    SegundoComponenteComponent
+    SegundoComponenteComponent,
+    GeneralComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

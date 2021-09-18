@@ -2,5 +2,12 @@ export class Persona {
     nombre: string | undefined;
     apellido: string | undefined;
     dni: number | undefined;
-    id:number | undefined;
+    id: number | undefined;
+    
+    /**
+     *
+     */
+    constructor() {
+
+    }
 }

@@ -1,1 +1,6 @@
-<p>LLegue hasta aca</p>
+sOY EL segundo
+{{ms.MiMensaje}}
+    <div *ngFor="let persona of personas">
+        <app-general [persona]="persona" (mostrarPersona)="verEnAlert($event)"></app-general>
+    </div>
+

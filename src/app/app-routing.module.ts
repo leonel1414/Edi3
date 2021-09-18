@@ -7,7 +7,8 @@ import { SegundoComponenteComponent } from './componentes/segundo-componente/seg
 import { ValidadorGuard } from './helpers/validador.guard';
 
 const routes: Routes = [
-  { path: 'primerComponente', component: PrimerComponenteComponent, canActivate:[ValidadorGuard] },
+  { path: 'primerComponente', component: PrimerComponenteComponent, canActivate: [ValidadorGuard] },
+  { path: 'primerComponente/:numero', component: PrimerComponenteComponent, canActivate:[ValidadorGuard] },
   { path: '', component: LoginComponent },
   {path:'segundo',component:SegundoComponenteComponent},
   {path: '**',component:NoEncontradoComponent}
