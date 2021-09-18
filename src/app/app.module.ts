@@ -8,6 +8,8 @@ import { PrimerComponenteComponent } from './componentes/primer-componente/prime
 import { LoginComponent } from './componentes/login/login.component';
 import { NoEncontradoComponent } from './componentes/no-encontrado/no-encontrado.component';
 import { MenuComponent } from './componentes/menu/menu.component';
+import { SegundoComponenteComponent } from './componentes/segundo-componente/segundo-componente.component';
+
 
 
 @NgModule({
@@ -17,6 +19,7 @@ import { MenuComponent } from './componentes/menu/menu.component';
     LoginComponent,
     NoEncontradoComponent,
     MenuComponent,
+    SegundoComponenteComponent
   ],
   imports: [
     BrowserModule,
