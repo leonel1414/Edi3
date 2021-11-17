@@ -9,7 +9,7 @@ export class ProductosService {
   constructor( private http: HttpClient) { }
 
   getProductos(): Observable<any> {
-    return this.http.get("https://serviback.herokuapp.com/productos/");
+    return this.http.get("https://serviback.herokuapp.com/productos");
   }
 
   getProducto(id:number): Observable<any> {
