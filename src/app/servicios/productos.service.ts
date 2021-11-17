@@ -9,7 +9,7 @@ export class ProductosService {
   constructor( private http: HttpClient) { }
 
   getProductos(): Observable<any> {
-    return this.http.get("https://serviback.herokuapp.com/productos/");
+    return this.http.get("https://serviback.herokuapp.com/productos");
   }
 
   getProducto(id:number): Observable<any> {
@@ -39,7 +39,7 @@ export class ProductosService {
   
   editarProducto(producto: any): Observable<any> {
     const formData = new FormData();
-    formData.append('id_pelicula', producto.id_pelicula);
+    formData.append('id_producto', producto.id_producto);
     formData.append('titulo', producto.titulo);
     formData.append('descripcion', producto.descripcion);
     formData.append('puntaje', producto.puntaje);
