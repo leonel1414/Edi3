@@ -1,3 +1,25 @@
+<div class="body">
+    <div class="row">
+      <div class="col-md-12" align="center" style="padding-top:250px">
+        <div>
+          <div class="col-md-6 logoUser" style="background:#2196f3;padding:20px;opacity:0.8;color:white">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQFvDIU26_8cxG5ZaL0Nzc-eHZynj2QtXLfO5kfRLvQRgQPIko1&usqp=CAU">
+              <div class="form-group" id="user-group">
+                <label for="user">Usuario</label>
+                <input type="text" class="form-control" [(ngModel)]="nombre" name="nombre" id="nameL" placeholder="ingrese su usuario" required>
+              </div>
+              <div class="form-group" id="password-group">
+                <label for="contra">Contraseña</label>
+                <input type="password" class="form-control" id="passL" [(ngModel)]="password" name="password" placeholder="ingrese su contraseña" required>
+              </div>
+              <br>
+              <div class="form-group">
+                <button type="submit" (click)="login()" class="btn btn-primary">Ingresar</button>
+              </div>
+          </div>
+        </div>
+      </div>
 
-<input type="text" [(ngModel)]="usuario">
-<input type="button" (click)="entrar()" value="Entrar">
+    </div>
+  </div>

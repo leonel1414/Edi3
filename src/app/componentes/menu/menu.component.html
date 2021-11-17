@@ -1,8 +1,0 @@
-<nav>
-    <ul>
-        <li *ngIf="!esAdmin"><a routerLink="/">LOGIN</a></li>
-        <li *ngIf="esAdmin"><a routerLink="/primerComponente">FORMULARIO</a></li>
-        <li *ngIf="esAdmin"><a routerLink="/segundo">SEGUNDO</a></li>
-        <li *ngIf="esAdmin"><input type="button" (click)="salir()" value="salir"></li>
-    </ul>
-</nav>
